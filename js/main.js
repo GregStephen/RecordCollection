@@ -6,10 +6,11 @@ let search = $("#search");
 
 function alphabetize() {
    recordCollection.sort(function(a, b){
-	  var nameA=a.artist.toLowerCase(), nameB=b.artist.toLowerCase()
-	  if (nameA < nameB) //sort string ascending
+	  var aWithoutThe = a.artist.replace(/the /gi, '').toLowerCase()
+    var bWithoutThe = b.artist.replace(/the /gi, '').toLowerCase()
+	  if (aWithoutThe < bWithoutThe) //sort string ascending
  	  	return -1 
-	  if (nameA > nameB)
+	  if (aWithoutThe > bWithoutThe)
 	  	return 1
 	  return 0 //default return value (no sorting)
   })
@@ -33,7 +34,7 @@ function populateRecords(recordCollectionArray) {
         console.log("artist button works")
        //SPITS OUT THE CARD USING THE INFORMATION FROM THE ARRAY/////////////////  
         console.log((i.artist.toLowerCase().includes(searchVal)))
-        outputDiv.append(`<div class="card album bg-dark text-white col" style="width:18rem;"><h5 class="card-header">${i.artist}</h5><img class="card-img-top location-image" src="${i.cover}"alt="${i.title}"><div class="card-footer">"${i.title}" -${i.year}</div></div>`).children(':last').hide().fadeIn(1500);
+        outputDiv.append(`<div class="card album bg-dark text-white col" style="width:18rem;"><h5 class="card-header">${i.artist}</h5><a target = "_blank" href="${i.link}"><img class="card-img-top location-image" src="${i.cover}"alt="${i.title}"></a><div class="card-footer">"${i.title}" -${i.year}</div></div>`).children(':last').hide().fadeIn(1500);
         console.log(i.artist); 
         console.log(search.val());
             }
@@ -42,7 +43,7 @@ function populateRecords(recordCollectionArray) {
             ///THEN CHECKS IF VALUE IN SEARCH BAR MATCHES ANY ALBUM
            if (i.title.toLowerCase().includes(searchVal)) {
             // SPITS OUT A CARD USING THE INFORMATION FROM THE ARRAY
-              outputDiv.append(`<div class="card album bg-dark text-white col" style="width: 18rem;"><h5 class="card-header">${i.artist}</h5><img class="card-img-top location-image" src="${i.cover}"alt="${i.title}"><div class="card-footer">"${i.title}" -${i.year}</div></div>`).children(':last').hide().fadeIn(1500);
+              outputDiv.append(`<div class="card album bg-dark text-white col" style="width: 18rem;"><h5 class="card-header">${i.artist}</h5><a target = "_blank" href="${i.link}"><img class="card-img-top location-image" src="${i.cover}"alt="${i.title}"></a><div class="card-footer">"${i.title}" -${i.year}</div></div>`).children(':last').hide().fadeIn(1500);
               console.log(i.title);
               console.log(search.val());
               console.log("album button works!")
@@ -51,7 +52,7 @@ function populateRecords(recordCollectionArray) {
           } else {
             console.log("both button works!")
                if (i.title.toLowerCase().includes(searchVal) || i.artist.toLowerCase().includes(searchVal)) {
-                 outputDiv.append(`<div class="card album bg-dark text-white col" style="width: 18rem;"><h5 class="card-header">${i.artist}</h5><img class="card-img-top location-image" src="${i.cover}"alt="${i.title}"><div class="card-footer">"${i.title}" -${i.year}</div></div>`).children(':last').hide().fadeIn(1500);
+                 outputDiv.append(`<div class="card album bg-dark text-white col" style="width: 18rem;"><h5 class="card-header">${i.artist}</h5><a target = "_blank" href="${i.link}"><img class="card-img-top location-image" src="${i.cover}"alt="${i.title}"></a><div class="card-footer">"${i.title}" -${i.year}</div></div>`).children(':last').hide().fadeIn(1500);
               }          
             }
         
