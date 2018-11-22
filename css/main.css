@@ -1,34 +1,30 @@
 body {
 	text-align: center;
-	background-color: lightblue;
+	background-color: #B03E3E;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
 
-.card{
-  margin:.5em;
-  min-width:10em;
-  max-width: 200em;
 }
 
 .album{
-  min-width:15em;
-  max-width:35em;
+	margin: .5em;
+  	min-width: 20em;
+ 	max-width: 35em;
 }
 
 .form{
-  max-width:50%;
-  max-height:50em;
-  margin:auto;
-  margin-top:1em;
-  padding:1em;
-  background-color: white;
-  border: 1em solid black;
-  border-radius: 15%;
+	max-width: 50%;
+	max-height: 50em;
+	margin: auto;
+  	margin-top: 1em;
+  	padding: 1em;
+  	background-color: white;
+  	border: 1em solid #353535;
+  	border-radius: 15%;
   
 }
 
 #output-records{
-  margin-top:6em;
+  	margin-top: 6em;
 }
