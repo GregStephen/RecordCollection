@@ -1,8 +1,8 @@
-let btn = $("#see-records");
+let searchBtn = $("#see-records");
 let outputDiv = $("#output-records");
 let search = $("#search");
-
-
+let genreDiv = $("#genreOfMusicDiv");
+let moreOptionsButton = $("#moreOptionsButton");
 
 function alphabetize() {
    recordCollection.sort(function(a, b){
@@ -64,8 +64,17 @@ function populateRecords(recordCollectionArray) {
 };
 
 
+genreDiv.hide();
 
-$(recordSearchForm).submit(function(e) {
+moreOptionsButton.click(function(e){
+  e.preventDefault();
+  genreDiv.show();
+  moreOptionsButton.hide();
+});
+
+
+
+searchBtn.click(function(e) {
   e.preventDefault();
   alphabetize();
   populateRecords(recordCollection);
