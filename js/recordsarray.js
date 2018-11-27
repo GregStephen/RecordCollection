@@ -19,7 +19,7 @@ var recordCollection = [
     "artist" : "1969 Bad Ass Band",
     "title" : "1969 Bad Ass Band",
     "year" : "1978",
-    "genre" : "Funk / Soul",
+    "genre" : "Funk/Soul",
     "style" : ["Soul", "Funk"],
     "cover" : "https://img.discogs.com/7rJSPeaMugb0-Z0mAZmxoK3fEqc=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4115777-1355761197-7970.jpeg.jpg",
     "link" : "https://www.discogs.com/1619-Bad-Ass-Band-1619-Bad-Ass-Band/release/4115777"
@@ -394,8 +394,8 @@ var recordCollection = [
     "artist" : "The Jinglehimers",
     "title" : "Children's Favorites",
     "year" : "1985",
-    "genre" : "",
-    "style" : [""],
+    "genre" : "Kids",
+    "style" : ["Kids"],
     "cover" : "",
     "link" : ""
   }, {
@@ -417,7 +417,7 @@ var recordCollection = [
   }, {
     "artist" : "Various",
     "title" : "The Best of Country",
-    "year" : "",
+    "year" : "Unknown",
     "genre" : "Country",
     "style" : ["Folk", "Country"],
     "cover" : "https://img.discogs.com/tfFaxS1-exLMJnQC4WvKLELnN5E=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7236866-1456511727-5159.jpeg.jpg",
