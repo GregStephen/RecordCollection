@@ -7,13 +7,13 @@ body {
 
 }
 
-.album{
+.album {
 	margin: .5em;
   	min-width: 20em;
  	max-width: 35em;
 }
 
-.form{
+#searchForm {
 	max-width: 50%;
 	max-height: 50em;
 	margin: auto;
@@ -25,6 +25,14 @@ body {
   
 }
 
-#output-records{
+#output-records {
   	margin-top: 6em;
+}
+
+button {
+	margin: 1em auto;
+}
+
+.searchBtn {
+	margin-left: 1em;
 }
