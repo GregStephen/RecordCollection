@@ -6,28 +6,65 @@
     <link rel= "stylesheet" href= "css/main.css"> 
 </head>
 <body>
-	<h1>My Record Collection!</h1>
-	<form class= "form boxes" id= "recordSearchForm" action= "">
-      <h2>Search thru my collection of records!</h2>
-      <div id= "searchBar">
-         <label for= "search">Search by artist name, album name or both:</label>
-         <input id= "search" name= "search" type= "text">
-      </div>
-      <div id = "buttons">
-         <label for= "artist">Artist:</label>
-         <input id= "artist" name = "searchChoice"type= "radio">
-         <label for= "album">Album:</label>
-         <input id= "album" name= "searchChoice" type= "radio">
-      </div>
-      <div>
-         <label for= "both">Both:</label>
-         <input id= "both" name= "searchChoice" type= "radio" checked>
-      </div>
-      <div id = "recordsBtn">
-         <button id= "see-records">Show me!</button>
-      </div>
-    </form>
-    
+	
+	<section id = "searchForm">
+		<form class= "form boxes" id= "recordSearchForm" action= "">
+	      <h2>Search thru my collection of records!</h2>
+	      <div id= "searchBar">
+	         <label for= "search">Search by artist, album or both:</label>
+	         <input id= "search" name= "search" type= "text">
+	      </div>
+	      <div id = "searchButtons">
+	         <label class = "searchBtn" for= "artist">Artist:</label>
+	         <input id= "artist" name = "searchChoice"type= "radio">
+	         <label class = "searchBtn" for= "album">Album:</label>
+	         <input id= "album" name= "searchChoice" type= "radio">
+	         <label class = "searchBtn" for = "both">Both:</label>
+	         <input id = "both" name = "searchChoice" type = "radio" checked>
+	      </div>
+	         
+	      <button id = "moreOptionsButton">More Options</button>
+	      <div id = "genreOfMusicDiv">
+	      	
+	      	<input id = "rock" type = "checkbox" name = "genre">
+	      	<label for = "rock">Rock</label>
+	      	
+	      	<input id = "pop" type = "checkbox" name = "genre">
+	      	<label for = "pop">Pop</label>
+	      	
+	      	<input id = "funk/soul" type = "checkbox" name = "genre">
+	      	<label for = "funk/soul">Funk/Soul</label>
+	      	
+	      	<input id = "classical" type = "checkbox" name = "genre">
+	      	<label for = "classical">Classical</label>
+	      	
+	      	<input id = "hiphop" type = "checkbox" name = "genre">
+	      	<label for = "hiphop">Hip Hop</label>
+	      	
+	      	<input id = "folk" type = "checkbox" name = "genre">
+	      	<label for = "folk">Folk</label>
+	      	
+	      	<input id = "electronic" type = "checkbox" name = "genre">
+	      	<label for = "electronic">Electronic</label>
+	      	
+	      	<input id = "jazz" type = "checkbox" name = "genre">
+	      	<label for = "jazz">Jazz</label>
+	      	
+	      	<input id = "country" type = "checkbox" name = "genre">
+	      	<label for = "country">Country</label>
+	      	
+	      	<input id = "comedy" type = "checkbox" name = "genre">
+	      	<label for = "comedy">Comedy</label>
+	      	
+	      	<input id = "kids" type = "checkbox" name = "genre">
+	      	<label for = "kids">Kids</label>
+	      </div>     
+	      <div id = "recordsBtn">
+	         <button id= "see-records">Show me!</button>
+	      </div>
+	    </form>
+	    
+	</section>
    <div class= "container" >
     <div id= "output-records" class= "row">
        
