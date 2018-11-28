@@ -220,7 +220,7 @@ var recordCollection = [
     "year" : "1977",
     "genre" : "Folk",
     "style" : ["Folk", "World", "Country"],
-    "cover" : "https://images.recordsale.de/600/600/billblaylockclaywillis-billblaylockclaywillis.jpg",
+    "cover" : "https://lh3.googleusercontent.com/SfVgL1emmyyB0MZyF08D6Q0EXhTFpB_NckmdQ4ih8UzS_OkjWjBsv79Jvp6txEAySidxcw=s85",
     "link" : "https://www.discogs.com/Bill-Blaylock-Clay-Willis-Bill-Blaylock-Clay-Willis/release/3869001"
   }, {
     "artist" : "Bill Phillips",
