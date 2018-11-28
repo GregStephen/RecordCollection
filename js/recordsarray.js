@@ -4,7 +4,7 @@ var recordCollection = [
     "title" : "The Beatles",
     "year" : "1968",
     "genre" : "Rock",
-    "style" : ["Pop Rock", "Experimental"],
+    "style" : ["Pop", "Rock & Roll", "Experimental"],
     "cover" : "https://img.discogs.com/buemDQeLTIhhS_2YWo5jHOItUtg=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-456663-1361306314-9486.jpeg.jpg",
     "link" : "https://www.discogs.com/The-Beatles-The-Beatles/master/46402"
   }, {
@@ -146,7 +146,7 @@ var recordCollection = [
     "artist" : "Beastie Boys",
     "title" : "Licensed To Ill",
     "year" : "1986",
-    "genre" : "Hip Hop",
+    "genre" : "HipHop",
     "style" : ["Pop", "Rap"],
     "cover" : "https://img.discogs.com/--oyBfBOaMI_SeMTX57AmX8xW6k=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5531755-1395920906-7292.jpeg.jpg",
     "link" : "https://www.discogs.com/Beastie-Boys-Licensed-To-Ill/release/1421233"
