@@ -10,7 +10,7 @@ body {
 .album {
 	margin: .5em;
   	min-width: 20em;
- 	max-width: 35em;
+ 	max-width: 22em;
 }
 
 #searchForm {
@@ -35,4 +35,11 @@ button {
 
 .searchBtn {
 	margin-left: 1em;
+}
+.genreButtons {
+	display: inline-block;
+	padding: .25em;
+	margin: .25em;
+	border: .1em solid black;
+	border-radius: 10%;
 }
