@@ -1,28 +1,6 @@
 body {
 	text-align: center;
 	background-color: #B03E3E;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-}
-
-.album {
-	margin: .5em;
-  	min-width: 20em;
- 	max-width: 22em;
-}
-
-#searchForm {
-	max-width: 50%;
-	max-height: 50em;
-	margin: auto;
-  	margin-top: 1em;
-  	padding: 1em;
-  	background-color: white;
-  	border: 1em solid #353535;
-  	border-radius: 15%;
-  
 }
 
 #output-records {
@@ -33,6 +11,98 @@ button {
 	margin: 1em auto;
 }
 
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+#searchForm {
+	max-width: 100%;
+	border: .25em solid #353535;
+	background-color: white;
+}
+.genreButtons {
+	display: inline-block;
+	padding: .25em;
+	margin: .25em;
+	border: .1em solid black;
+	border-radius: 10%;
+}
+.album {
+	min-width: 20em;
+	margin: .5em;
+	
+}
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+#searchForm {
+	max-width: 90%;
+	border: .45em solid #353535;
+	background-color: white;
+	margin: 1em auto;
+	border-radius: 10%;
+}
+.genreButtons {
+	display: inline-block;
+	padding: .25em;
+	margin: .25em;
+	border: .1em solid black;
+	border-radius: 10%;
+}
+.album {
+	min-width: 20em;
+	max-width: 25em;
+	margin: .5em;
+}
+#output-records {
+  	margin: auto;
+}
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+#searchForm {
+	max-width: 70%;
+	margin: 1em auto;
+	border: .45em solid #353535;
+	background-color: white;
+	border-radius: 10%;
+}
+.genreButtons {
+	display: inline-block;
+	padding: .25em;
+	margin: .25em;
+	border: .1em solid black;
+	border-radius: 10%;
+	
+}
+.album {
+	min-width: 20em;
+	margin: .5em;
+}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+#searchForm {
+	max-width: 65%;
+	border-radius: 12.5%;
+	border: .75em solid #353535;
+}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.album {
+	margin: .5em;
+  	min-width: 20em;
+ 	max-width: 22em;
+}
 .searchBtn {
 	margin-left: 1em;
 }
@@ -42,4 +112,16 @@ button {
 	margin: .25em;
 	border: .1em solid black;
 	border-radius: 10%;
+}
+#searchForm {
+	max-height: 50em;
+	margin: auto;
+  	margin-top: 1em;
+  	padding: 1em;
+  	background-color: white;
+  	border: 1em solid #353535;
+  	border-radius: 15%;
+  
+}
+
 }
