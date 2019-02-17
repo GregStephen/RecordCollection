@@ -17,18 +17,20 @@ function alphabetize() {
   });
 };
 
-$(document).ready(function() {
-  $('[data-toggle="popover"]').popover({
-    container:'body',
-    html: true,
-    placement: 'auto',
-    trigger: 'hover',
-    content: function(){
-      var url = $(this).data('full');
-      return '<img src="' + url + '">'
-    }
-  });
-});
+
+
+// $(document).ready(function() {
+//   $('.popover-dismiss').popover({
+//     container:'body',
+//     html: true,
+//     placement: 'auto',
+//     trigger: 'focus',
+//     content: function(){
+//       var url = $(this).data('full');
+//       return '<img src="' + url + '">'
+//     }
+//   });
+// });
 
 
 
@@ -48,7 +50,7 @@ function populateRecords(recordCollectionArray) {
     function outputResults() {
       //YOU SHOULD CHANGE THE LINK TO COME FROM THE ALBUM TITLE AND A POPOVER TO SHOW THE TRACK LISTING WHEN YOU PRESS THE ALBUM/////
       outputDiv.append(`<div class="card album bg-dark text-white col" style="width:18rem;"><h5 class="card-header">${i.artist}</h5>
-        <a href = "#" data-toggle="popover" data-full ="${i.cover}"><img class="card-img-top" src="${i.cover}" alt="${i.title}"></a>
+        <a tabindex="0" data-trigger="focus" title="Songs" data-toggle="popover"  data-content="Right?"><img class="card-img-top" src="${i.cover}" alt="${i.title}"></a>
         <div class="card-footer"><a target = "_blank" href="${i.link}">"${i.title}"</a> -${i.year}</div></div>`).children(':last').hide().fadeIn(1500);
     };
 
@@ -103,7 +105,11 @@ function populateRecords(recordCollectionArray) {
     outputDiv.html("<h2>Sorry, there's nothing here for you at this time</h2>");
   }
 };
-
+$(document).ready(function () {
+  $('[data-toggle="popover"]').popover({
+  container: outputDiv
+  })
+});
 
 genreDiv.hide();
 
