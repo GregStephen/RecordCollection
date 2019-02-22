@@ -50,7 +50,7 @@ function populateRecords(recordCollectionArray) {
     function outputResults() {
       //YOU SHOULD CHANGE THE LINK TO COME FROM THE ALBUM TITLE AND A POPOVER TO SHOW THE TRACK LISTING WHEN YOU PRESS THE ALBUM/////
       outputDiv.append(`<div class="card album bg-dark text-white col" style="width:18rem;"><h5 class="card-header">${i.artist}</h5>
-        <a tabindex="0" data-trigger="focus" title="Songs" data-toggle="popover"  data-content="Right?"><img class="card-img-top" src="${i.cover}" alt="${i.title}"></a>
+        <button id = "popoverBtn"><a tabindex="0" data-trigger="focus" title="Songs" data-toggle="popover" data-html="true" data-content= '<img src="${i.back}">'> <img class="card-img-top" src="${i.cover}" alt="${i.title}"></a></button>
         <div class="card-footer"><a target = "_blank" href="${i.link}">"${i.title}"</a> -${i.year}</div></div>`).children(':last').hide().fadeIn(1500);
     };
 
@@ -120,13 +120,18 @@ searchForm.on( "click", "#moreOptionsButton", function(event) {
   $(this).hide();
 });
 
-
+// $("#popoverBtn").on('click',function(){
+// $('a').popover("show");
+// });
 
 searchForm.on( "click", "#see-records", function(event) {
   event.preventDefault();
   event.stopPropagation();
   alphabetize();
-  populateRecords(recordCollection);
+  populateRecords(recordCollection)
+  $('a').popover("show");
+  $('a').popover("hide");
+
 });
 
 
