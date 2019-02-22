@@ -22,6 +22,7 @@ var recordCollection = [
     "genre" : "Funk/Soul",
     "style" : ["Soul", "Funk"],
     "cover" : "https://img.discogs.com/7rJSPeaMugb0-Z0mAZmxoK3fEqc=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4115777-1355761197-7970.jpeg.jpg",
+    "back" : "https://img.discogs.com/yNWR7PBnA3QNLe6Keoht25L8AJ8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4115777-1355761214-4061.jpeg.jpg",
     "link" : "https://www.discogs.com/1619-Bad-Ass-Band-1619-Bad-Ass-Band/release/4115777"
   }, {
     "artist" : "Various",
